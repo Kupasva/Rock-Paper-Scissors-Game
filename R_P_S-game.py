@@ -1,15 +1,10 @@
 from pyfiglet import figlet_format
-from termcolor import colored
-msg = input("write a word:")
+#from colorama import Fore, Back, Style
+from termcolor import  colored
 
-color = input("choose color:")
+msg = input("enter some text")
 
-valid_color = ('red', 'green', 'blue', 'cyan', 'white')
-
-if color not in valid_color:
-    color = "white"
-
-accii_art = figlet_format(msg,font='slant')
-
-color_ascii = colored(accii_art,color)
-print(color_ascii)
+art = figlet_format(msg)
+print(art)
+colour = colored(art, 'red')
+# choice = input("write a color")
