@@ -3,3 +3,4 @@ from termcolor import colored
 my_art = figlet_format("R - P - S -}")
 print(my_art)
 print("hello world")
+print("open source")
